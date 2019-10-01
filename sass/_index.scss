@@ -1,0 +1,1218 @@
+
+/*
+    ##################################
+        headet-top styling goes here
+    ##################################
+*/
+.tophead{
+    background:url('../images/bg/pricessnaturehairbg2.jpg');
+    height:70px;
+    background-size: cover;
+    text-align: center;
+    font-size: 16px;
+    font-weight:600;
+        .child{
+            height:50px;
+            background:$yellowwhiteoverlay;
+            padding-top:10px;
+                .container{
+                    display:flex;
+                    justify-content: center;
+                    align-content: center;
+
+                        .contact{
+                            flex:2; 
+                            display:flex;
+                            align-content: center;
+                            justify-content: space-around;
+                            color:$darkgreen;
+                                .fa {
+                                    background: $darkgreen;
+                                    color: $yellow;
+                                    width: 34px;
+                                    height: 34px;
+                                    border-radius: 50%;
+                                    text-align:center;
+                                    line-height:34px;
+                                    transition: all .3s ease;
+                                }
+                                .fa:hover {
+                                    transition: all .3s ease;
+                                    box-shadow: 2px 2px 2px 0px $lightgreen;
+                                    transform: translateY(-2px);
+                                }
+                               
+                        }
+
+                        .social{
+                            flex:1;
+                            display: flex;
+                            align-content: center;
+                            justify-content: space-around;
+                                span{
+                                    flex:1;
+                                    .fa{
+                                        background: $darkgreen;
+                                        color: $yellow;
+                                        width: 34px;
+                                        height: 34px;
+                                        border-radius: 50%;
+                                        text-align:center;
+                                        line-height:34px;
+                                        transition: all .3s ease;
+                                            .fa:hover {
+                                                transition: all .3s ease;
+                                                box-shadow: 5px 5px 5px $darkgreen;
+                                                transform: translateY(-2px);
+                                            }
+                                        
+                                    }
+                                        .fa-facebook:hover {
+                                            background: #3b5998;
+                                            color: #fff;
+                                        }
+
+                                        .fa-twitter:hover {
+                                            background: #55acee;
+                                            color: #fff;
+                                        }
+
+                                        .fa-instagram:hover {
+                                              background: #d6249f;
+                                              background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                                              box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+                                            color: #fff;
+                                        }
+                                    
+                                }
+                        }
+                }
+        }
+}
+
+/*
+    headertop: small screen phones
+*/
+@media (max-width:768px) {
+    .tophead {
+        background: url('../images/bg/pricessnaturehairbg2.jpg');
+        height: 70px;
+        background-size: cover;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+
+        .child {
+            padding-top: 10px;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+
+                .contact {
+                    flex: 2;
+                    display: flex;
+                    align-content: center;
+                    justify-content: space-around;
+                    color: $darkgreen;
+
+                    p{
+                        font-weight:500;
+                    }
+
+                    .fa {
+                        background: $darkgreen;
+                        color: $yellow;
+                        width: 34px;
+                        height: 34px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 34px;
+                        transition: all .3s ease;
+                    }
+
+                    .fa:hover {
+                        transition: all .3s ease;
+                        box-shadow: 2px 2px 2px 0px $lightgreen;
+                        transform: translateY(-2px);
+                    }
+
+                }
+
+                .social {
+                    
+                    display:none;
+
+                
+                }
+            }
+        }
+    }
+
+}
+
+/*
+    header top: medium screen
+*/
+
+/*
+    ##################################
+        headet-top styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        navbar styling begins here
+    ##################################
+*/
+
+    .navbar{
+        height:70px;
+        overflow:hidden;
+        background:$darkgreen;
+        z-index:100;
+        padding:10px 0px;
+        position:sticky;
+        top:0px;
+        .container{
+            display:flex;
+            justify-content: space-evenly;
+            .brand{
+                flex:1; 
+                img{
+                    height:50px;
+                }
+            }
+
+            .navspace{
+                height:50px;
+                background:$darkgreen;
+                flex:3;
+                border-radius:10px;
+                border-bottom:0.5px solid rgba(0, 0, 0, .25);
+                box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.5)
+                0 12px 15px 0 rgba(0, 0, 0, 0.1);
+               text-align:center;
+               padding-top:25px;
+            }
+
+            .navicons{
+                flex:1;
+                margin-left:50px;
+                display:flex;
+                i{
+                    flex:1;
+                    margin:0px 10px;
+                      color: $yellow;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 50%;
+                      text-align: center;
+                      line-height: 50px;
+                      transition: all .3s ease;
+                      cursor: pointer;      
+                }
+                i:hover{
+                     transition: all .3s ease;
+                     box-shadow: 2px 2px 2px 0px $lightgreen;
+                     transform: translateY(-2px);     
+                }
+            }
+
+
+
+        }
+    }
+
+    @media(max-width:343px) {
+        .navbar {
+            .container {
+                display: flex;
+                justify-content: space-evenly;
+
+                .navicons {
+                    flex: 1;
+                    display: flex;
+
+                    i {
+                        flex: 1;
+                        margin: 0px 10px;
+                        color: $yellow;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 20px;
+                        transition: all .3s ease;
+                        cursor: pointer;
+                        display:none;
+                    }
+                    i:nth-child(2) {
+                        display:block;
+                        color: $yellowwhite;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width:414px){
+         .navbar {
+             .container {
+                 display: flex;
+                 justify-content: space-evenly;
+
+                 .navicons {
+                     flex: 1;
+                     display: flex;
+
+                     i {
+                         flex: 1;
+                         margin: 0px 10px;
+                         color: $yellow;
+                         width: 50px;
+                         height: 50px;
+                         border-radius: 50%;
+                         text-align: center;
+                         line-height: 50px;
+                         transition: all .3s ease;
+                         cursor: pointer;
+                     }
+                     i:first-child{
+                         display:none;
+                     }
+                     i:last-child{
+                         color: $yellowwhite;
+                     }
+                 }
+             }
+         }
+    }
+
+    @media (max-width:345px){
+            .navbar {
+                .container {
+                    .navicons {                 
+                        i:first-child {
+                            display: none;
+                        }
+
+                        
+
+                    }
+
+
+
+                }
+            }
+    }
+/*
+    ##################################
+        navbar styling ends here
+    ##################################
+*/
+
+/*
+    ########################################
+        navbar-links styling begins here
+    ########################################
+*/
+    .nav-links{
+        width:30vw;
+        height:100%;
+        padding-left:5vh;
+        padding-right:5vh;
+        background:$yellowwhiteoverlay;
+        line-height:50px;
+        position:absolute;
+        top:140px;
+        left:-1000px;
+        transition: 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+       
+        ul{
+            background:$darkgreen;
+            padding:5vh 0vw;
+            transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            li{
+                list-style: none;
+                border-bottom:0.5px solid rgba(243, 243, 243, 0.6);
+                a{
+                    color:$yellow;
+                    font-size: 1.5em;
+                    padding:20px;
+                    width:100%;
+                    text-decoration: none;
+                    transition: 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);                   
+                }
+                
+                 
+                a:hover{
+                    color:white;
+                }
+            }
+            li:first-child {
+                border-top:0.5px solid rgba(243, 243, 243, 0.6);
+            }
+
+           
+        }
+    }
+    .navopen{
+        left:0px !important;
+        box-shadow: 2px 2px 2px 0px #009933;
+        z-index: 50;
+        transition:0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    /*
+        mobile style for navbar-links
+    */
+    @media(max-width:576px){
+        .nav-links {
+            width: 70vw;
+            height: 100%;
+            padding-left: 5vh;
+            padding-right: 5vh;
+
+            ul {
+                li {
+                    list-style: none;
+                    border-bottom: 0.5px solid rgba(243, 243, 243, 0.6);
+
+                    a {
+                        font-size: 1.2em;
+                        padding: 10px;
+                    }
+                }
+
+                li:first-child {
+                    border-top: 0.5px solid rgba(243, 243, 243, 0.6);
+                }
+            }
+        }
+    }
+
+    /*
+        tablet styling
+    */
+    @media (min-width:577px) AND (max-width:768px){
+               .nav-links {
+                   width: 50vw;
+                   height: 100%;
+                   padding-left: 5vh;
+                   padding-right: 5vh;
+
+                   ul {
+                       li {
+                           list-style: none;
+                           border-bottom: 0.5px solid rgba(243, 243, 243, 0.6);
+
+                           a {
+                               font-size: 1.4em;
+                               padding: 25px;
+                           }
+                       }
+
+                       li:first-child {
+                           border-top: 0.5px solid rgba(243, 243, 243, 0.6);
+                       }
+                   }
+               }
+    }
+/*
+    ##################################
+        navbar-links styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        hero section styling begins here
+    ##################################
+*/
+    .hero{
+        background-color: $darkgreen;
+        background-image:url('../images/bg/princessnaturehero5.jpg');
+       background-size: cover;
+       background-position: top center;
+       padding-top:30vh;
+        
+       .overlay{
+                width:100%;
+                height:100%;
+                background:rgba(0, 0, 0, .9);
+                padding-top:5vh;
+                padding-bottom: 5vh;
+               .hero-box {
+                   h2 {
+                       color: $yellow;
+                       font-weight: 900;
+                       font-size: 3em;
+                       margin-bottom:0;
+                   }
+
+                   p {
+                       color: $yellowwhite;
+                       padding: 20px;
+                       border-radius: 20px;
+                       text-align: center;
+                       font-weight: 500;
+                       line-height:1.5em;
+
+                   }
+               }
+       }
+    }
+
+
+
+
+/*
+    ##################################
+        hero section styling ends here
+    ##################################
+*/
+
+
+/*
+    ##################################
+        welcome section styling starts here
+    ##################################
+*/
+    .welcome{
+        padding:5vh 0vh;
+        background:$yellowwhite;
+        .welcomebox{
+            display:flex;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            flex-direction:row-reverse;
+            .imagecont{
+                flex:2;
+                   .image-container{
+                       
+                       overflow:hidden; 
+                       transition: 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                   }  
+            }
+            .infocont {
+                flex:2;
+                padding:0vh 5vw;
+                p{
+                    text-align:justify;
+                    line-height:1.5em;
+                    font-size: 1.4em;
+                    color:$darkgreen;
+                }
+            }
+        }
+        @include section(white);
+    }
+
+    //media screen query for medium device
+
+    @media (max-width:768px){
+           .welcome {
+               padding: 5vh 0vh;
+               background: $yellowwhite;
+               .welcomebox {
+                   flex-direction:column;
+
+                   .imagecont {
+                       flex: 2;
+                       .image-container {
+                           padding:2vh;
+                           overflow: hidden;
+                           transition: 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                       }
+                   }
+                   .infocont {
+                       flex: 2;
+                       padding: 0vh 2vw;
+
+                       p {
+                           line-height: 1.5em;
+                           font-size: 1.1em;
+                           margin-top:20px;
+                           transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+                       }
+
+                        p:hover {
+                            line-height: 1.5em;
+                            font-size: 1.1em;
+                            background:$darkgreen;
+                            color:$yellowwhite;
+                            padding:5px;
+                        }
+                   }
+               }
+           }
+
+    }
+
+/*
+    ##################################
+        welcome section styling ends here
+    ##################################
+*/
+
+/*
+    ##################################
+        showoff section styling begins here
+    ##################################
+*/
+    .showoff{
+        padding: 10vh 0vh;
+        background:white;
+        
+        h1{
+            font-weight: 900;
+            color:$lightgreen;
+            margin-bottom:5vh;
+        }
+        .showoffbox{
+            display:flex;
+            .box{
+                margin:5px;
+                flex:1;
+                text-align:center;
+                border:1px solid $lightgreen;
+                padding: 5vh 0vh;
+                background:$darkgreen;
+                hr{
+                    background:$yellow;
+                }
+                i{
+                    color:$lightgreen;
+                    margin:20px 0px;
+                    transition: 0.9s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+                }
+                h3{
+                    margin:0px;
+                    padding: 0px;
+                    margin:20px 0px;
+                    color:$yellow;
+                }
+                .notes{
+                    padding:0px 20px;
+                    p{
+                        text-align:justify;
+                        color:$darkgreen;
+                         margin-bottom:20px;
+                         margin:20px 0px;
+                         color:$darkgreen;
+                         transition: 1.9s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+                         
+                    }
+                }
+            }
+        }
+        @include section($yellowwhite);
+    }
+
+    .showoff .showoffbox .box:hover p {
+        color:white !important;
+        display:block;
+    }
+     .showoff .showoffbox .box:hover i {
+         color: white !important;
+         font-size: 70px;
+     }
+
+        .showoff .showoffbox .box:hover {
+            background: black !important;
+            transition: 0.9s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+
+    //media screen query for medium device
+
+    @media (max-width:768px){
+        .showoffbox {
+            flex-direction: column;
+        }
+    }
+
+/*
+    ##################################
+        showoff section styling ends here
+    ##################################
+*/
+
+/*
+    ##################################
+        skin section styling starts here
+    ##################################
+*/
+.skin {
+    padding: 5vh 0vh;
+
+    .welcomebox {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        .imagecont {
+            flex: 2;
+
+            .image-container {
+
+                overflow: hidden;
+                transition: 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+        }
+
+        .infocont {
+            flex: 2;
+            padding: 0vh 5vw;
+
+            p {
+                text-align: justify;
+                line-height: 1.5em;
+                font-size: 1.4em;
+                color: $darkgreen;
+            }
+        }
+    }
+    @include section($yellowwhite);
+}
+
+//media screen query for medium device
+
+@media (max-width:768px) {
+    .skin {
+        padding: 5vh 0vh;
+        background: $yellowwhite;
+
+        .welcomebox {
+            flex-direction: column;
+
+            .imagecont {
+                flex: 2;
+
+                .image-container {
+                    padding: 2vh;
+                    overflow: hidden;
+                    transition: 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                }
+            }
+
+            .infocont {
+                flex: 2;
+                padding: 0vh 2vw;
+
+                p {
+                    line-height: 1.5em;
+                    font-size: 1.1em;
+                    margin-top: 20px;
+                    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+                }
+
+                p:hover {
+                    line-height: 1.5em;
+                    font-size: 1.1em;
+                    background: $darkgreen;
+                    color: $yellowwhite;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+/*
+    ##################################
+        skin section styling ends here
+    ##################################
+*/
+
+
+/*
+    ##################################
+        ctashop section styling begins here
+    ##################################
+*/
+.ctashop{
+    min-height:50vh;
+    background:$yellowwhite;
+    background:url('../images/bg/princessnatureshow.jpg');
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+    padding:10vh 0vh;
+    .overlay{
+        min-height:50vh;
+        width:100%;
+        background:rgba(0, 0, 0, .9);
+        .content{
+            min-height:50vh;
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                color:$yellow;
+                font-size:3.5em;
+                font-weight:900;
+                max-width:80%;
+            }
+        }
+    }
+
+}
+
+@media (max-width:768px) {
+    .ctashop {
+        .overlay {
+            .content {
+                h2 {
+                    color: $yellow;
+                    font-size: 2.5em;
+                    font-weight: 900;
+                    max-width: 80%;
+                }
+            }
+        }
+
+    }
+}
+
+/*
+    ##################################
+        ctashop section styling ends here
+    ##################################
+*/
+
+/*
+    ##################################
+        bestsellers section styling begins here
+    ##################################
+*/
+    .bestselling{
+        @include section(white);
+        min-height: 50vh;
+
+        .products-card{
+            display:flex;
+            .productcard{
+                box-shadow: 5px 5px 5px 0px lightgray;
+                margin:10px;
+                .imagearea{
+                    flex:1;
+                    text-align:center;
+                    justify-content: center;
+                    position:relative;
+                    
+                    .quickview{
+                        position:absolute;
+                        bottom:50%;
+                        left:20px;
+                        display:none;
+                        transition:.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                    }
+                    &:hover .quickview{
+                        display:block;
+                        transition:.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                    }
+                }
+
+                .textarea{
+                    text-align:center;
+                    h4{
+                        font-weight:600px;
+                        margin-top:20px;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        margin:0px;
+                        padding:0px;
+                        color:$darkgreen;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:540px){
+        .bestselling {
+            @include section(white);
+            min-height: 50vh;
+
+            .products-card {
+               
+                .productcard {
+                    .imagearea {
+                        .quickview {
+                            position: absolute;
+                            bottom: 50%;
+                            left: 20px;
+                            display: none;
+                            transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                        }
+
+                        &:hover .quickview {
+                            display: block;
+                            transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                        }
+                    }
+
+                    .textarea {
+                        text-align: center;
+
+                        h4 {
+                            font-weight: 300px;
+                            margin-top: 20px;
+                            text-transform: capitalize;
+                            font-size: 0.9em;
+                        }
+
+                        p {
+                            margin: 0px;
+                            padding: 0px;
+                            font-size: 0.9em;
+                            color: $darkgreen;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+/*
+    ##################################
+        bestsellers section styling ends here
+    ##################################
+*/
+
+
+/*
+    ##################################
+        blog section styling starts here
+    ##################################
+*/
+    .blog{
+        @include section($yellowwhite);
+        min-height: 50vh;
+        .blogs-box{
+            display:flex;
+            .blogbox{
+                padding:10px;
+                box-shadow: 5px 5px 5px 0px black;
+                margin:10px;
+                background:white;
+                
+                .headpart{
+                    position:relative;
+                    .date{
+                        box-shadow: 2px 2px 2px 0px black;
+                        position:absolute;
+                        top:40px;
+                        left:0px;
+                        width:50px;
+                        height:50px;
+                        overflow:hidden;
+                        background:white;
+                        color:$darkgreen;
+                        p{
+                            margin:0px;
+                            padding:0px;
+                            text-align:center;
+                            font-weight:600;
+                        }
+                    }
+
+                    .category{
+                           box-shadow: 2px 2px 2px 0px black;
+                           position:absolute;
+                           top:0px;
+                           right:0px;
+                           width:50px;
+                           height:50px;
+                           overflow:hidden;
+                           background:$darkgreen;
+                           color:$darkgreen;
+                           display:flex;
+                           justify-content: center;
+                           align-items: center;
+                           p{
+                               margin:0px;
+                               padding:0px;
+                               text-align:center;
+                               font-weight:600;
+                               color:$yellow;
+                               text-transform: lowercase;
+                           }
+                    }
+                
+                }
+            }
+        }
+    }
+    @media (max-width:540px){
+        h3{
+            font-size: 0.9em;
+        }
+
+        p{
+            font-size: 0.9em;
+        }
+    }
+
+/*
+    ##################################
+        blog section styling ends here
+    ##################################
+*/
+
+/*
+    ##################################
+        subscribe section styling ends here
+    ##################################
+*/
+    .subscribe{
+        @include section(white);
+        .container{
+                background:url("../images/bg/princessnature1.jpeg");
+                padding:5vh 0vh;
+               .h2 {
+                   padding: 0px;
+                   margin: 0px;
+                   color:lighten($yellowwhite, 0.5);
+               }
+               p{
+                   color:$yellow;
+               }
+
+               .subscription-form {
+                   padding:0px 20px;
+               }
+        }
+    }
+
+    @media (max-width:576px){
+            .subscribe {
+                @include section(white);
+                padding:0px;
+                .container {
+                    background: url("../images/bg/princessnature1.jpeg");
+                    padding: 5vh 20px;
+                    .subscription-form {
+                        input{
+                            margin:10px 0px;
+                        }
+                    }
+                }
+            }
+    }
+
+/*
+    ##################################
+        subscribe section styling ends here
+    ##################################
+*/
+
+
+/*
+    ##################################
+        footer section styling begins  here
+    ##################################
+*/
+    footer{
+            .falsefooter{
+                @include section(black);
+                background:url("../images/bg/princessnaturehero5.jpg");
+                background-size:cover;
+                background-position: center center;
+                background-attachment: fixed;
+                position:relative;
+                &::after{
+                    content:'';
+                    width:100%;
+                    height:100%;
+                    position:absolute;
+                    left:0;
+                    top:0;
+                    background:rgba($darkgreen, 0.9);
+                    z-index:100;   
+                }
+
+                .fholder{
+                    display:flex;
+                    align-items: flex-start;
+                    justify-content:space-between;
+                    padding-left: 20px;
+                    
+                    h6{
+                        color:white;
+                    }
+                    p, a{
+                        color:$yellow;
+                        font-weight:300;
+                        line-height:2.5em;
+                        font-size:0.9em;
+                    }
+                    .fa{
+                        color:white;
+                        margin-right:10px;
+                        clear: both;
+                    }
+                    .about{
+                        flex:1;
+                        padding-right: 20px;
+                        z-index:20000;
+                    }
+                    .contact{
+                        flex:1;
+                        padding-right: 40px;
+                        z-index:20000;
+                        text-align:left;
+                    }
+                    .product{
+                        flex:1;
+                        padding-right: 20px;
+                        z-index:20000;
+                        text-align:right;
+                    }
+                    .links{
+                        flex:1;
+                        z-index:20000;
+                        text-align: right;
+                    }
+                }
+            }
+            .footer{
+                padding:4vh 0vh;
+                background:$darkgreen;
+                
+                   .container{
+                       display:flex;
+                       align-items:center;
+                       justify-content: space-between;
+
+                       .developer{
+                        color:white;
+                        font-size:0.8em;
+                        font-weight:200;
+                        
+                        
+                       }
+                       .copyright{
+                           color:white;
+                            font-size:0.8em;
+                            font-weight:200;
+                       }
+                   }
+            }
+    }
+    
+
+    /* media query for mobile  */
+    @media (max-width:560px){
+          footer {
+              .falsefooter {
+                  .fholder {
+                      display: flex;
+                      flex-direction:column;
+                      align-items: flex-start;
+                      justify-content: center;
+                      padding: 20px;
+                      
+                      .footerbox{
+                          margin-bottom: 20px;
+                          text-align:left !important;
+                      }
+
+                      h6 {
+                          color: white;
+                      }
+
+                      p,
+                      a {
+                          color: $yellow;
+                          font-weight: 300;
+                          line-height: 1.5em;
+                          font-size: 0.9em;
+                      }
+
+                      span {
+                          color: white;
+                          margin-right: 10px;
+                          clear: both;
+                      }
+
+                      .about {
+                          flex: 1;
+                          padding-right: 20px;
+                          z-index: 20000;
+                      }
+
+                      .contact {
+                          flex: 1;
+                          padding-right: 40px;
+                          z-index: 20000;
+                          text-align: left;
+                      }
+
+                      .product {
+                          flex: 1;
+                          padding-right: 20px;
+                          z-index: 20000;
+                          text-align: right;
+                      }
+
+                      .links {
+                          flex: 1;
+                          z-index: 20000;
+                          text-align: right;
+                          margin-bottom: 0px;
+                      }
+                  }
+              }
+
+              .footer {
+                  min-height: 1vh;
+                  background: $darkgreen;
+                  padding-top: 5vh;
+                         .container {
+                             display: flex;
+                             flex-direction:column;
+                             align-items: center;
+                             justify-content: space-between;
+
+                             .developer {
+                                 color: white;
+                                 font-size: 0.8em;
+                                 font-weight: 200;
+                                 margin-bottom:10px;
+                             }
+
+                             .copyright {
+                                 color: white;
+                                 font-size: 0.8em;
+                                 font-weight: 200;
+                             }
+                         }
+               
+              }
+          }
+    }
+
+ .backtotop{
+     position: fixed;
+     bottom:15vh;
+     right:5px;
+     z-index: 20000000;
+     display:none;
+     .fa{
+         color:white;
+     }
+ }
+/*
+    ##################################
+        footer section styling ends here
+    ##################################
+*/

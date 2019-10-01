@@ -1,0 +1,92 @@
+@import "mixins";
+
+
+*, body, html{
+    padding:0;
+    margin:0;
+}
+
+p{
+    font-family: 'Montserrat',
+    sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'EB Garamond',
+    serif;
+    color:$lightgreen;
+    font-weight:600;
+}
+
+.btn-one{
+    @include button($lightgreen);
+}
+
+.btn-two{
+    @include button($yellow);
+}
+/* primary button styling */
+.btn-primary{
+    color: $darkgreen;
+    background-color: $lightgreen;
+    border-color: $lightgreen;
+}
+.btn-primary:hover {
+    color: $yellow;
+    background-color: $darkgreen;
+    border-color: $darkgreen;
+}
+/* primary button styling */
+/* secondary button styling */
+.btn-secondary {
+    color: $yellow;
+    background-color: $darkgreen;
+    border-color: $darkgreen;
+}
+.btn-secondary:hover {
+    color: $lightgreen;
+    background-color: $darkgreen;
+    border-color: $darkgreen;
+}
+/* secondary button styling */
+
+/* image hover */
+    .imageeffect {
+        transform: scale(1.5) !important;
+        transition: 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+
+    .image-container{
+        overflow:hidden !important;
+        text-align: center;
+    }
+
+    .vertical-align{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height:100%;
+        width:100%;
+    }
+
+    .fa-toggle-off {
+        color:$lightgreen !important;
+    }
+
+        .fa-toggle-on {
+            color: yellow !important;
+        }
+
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: $yellow !important;
+            color:$darkgreen !important;
+            outline:0 !important;
+            border:none;
+        }

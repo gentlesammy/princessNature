@@ -1,0 +1,1328 @@
+*, body, html {
+  padding: 0;
+  margin: 0; }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', serif;
+  color: #009933;
+  font-weight: 600; }
+
+.btn-one {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #009933;
+  border-radius: 0.6em;
+  color: #009933;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
+
+.btn-two {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #FFFF66;
+  border-radius: 0.6em;
+  color: #FFFF66;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
+
+/* primary button styling */
+.btn-primary {
+  color: #000a00;
+  background-color: #009933;
+  border-color: #009933; }
+
+.btn-primary:hover {
+  color: #FFFF66;
+  background-color: #000a00;
+  border-color: #000a00; }
+
+/* primary button styling */
+/* secondary button styling */
+.btn-secondary {
+  color: #FFFF66;
+  background-color: #000a00;
+  border-color: #000a00; }
+
+.btn-secondary:hover {
+  color: #009933;
+  background-color: #000a00;
+  border-color: #000a00; }
+
+/* secondary button styling */
+/* image hover */
+.imageeffect {
+  transform: scale(1.5) !important;
+  transition: 3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.image-container {
+  overflow: hidden !important;
+  text-align: center; }
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
+
+.fa-toggle-off {
+  color: #009933 !important; }
+
+.fa-toggle-on {
+  color: yellow !important; }
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #FFFF66 !important;
+  color: #000a00 !important;
+  outline: 0 !important;
+  border: none; }
+
+/*
+    ##################################
+        headet-top styling goes here
+    ##################################
+*/
+.tophead {
+  background: url("../images/bg/pricessnaturehairbg2.jpg");
+  height: 70px;
+  background-size: cover;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600; }
+  .tophead .child {
+    height: 50px;
+    background: rgba(162, 247, 162, 0.5);
+    padding-top: 10px; }
+    .tophead .child .container {
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      .tophead .child .container .contact {
+        flex: 2;
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        color: #000a00; }
+        .tophead .child .container .contact .fa {
+          background: #000a00;
+          color: #FFFF66;
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 34px;
+          transition: all .3s ease; }
+        .tophead .child .container .contact .fa:hover {
+          transition: all .3s ease;
+          box-shadow: 2px 2px 2px 0px #009933;
+          transform: translateY(-2px); }
+      .tophead .child .container .social {
+        flex: 1;
+        display: flex;
+        align-content: center;
+        justify-content: space-around; }
+        .tophead .child .container .social span {
+          flex: 1; }
+          .tophead .child .container .social span .fa {
+            background: #000a00;
+            color: #FFFF66;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 34px;
+            transition: all .3s ease; }
+            .tophead .child .container .social span .fa .fa:hover {
+              transition: all .3s ease;
+              box-shadow: 5px 5px 5px #000a00;
+              transform: translateY(-2px); }
+          .tophead .child .container .social span .fa-facebook:hover {
+            background: #3b5998;
+            color: #fff; }
+          .tophead .child .container .social span .fa-twitter:hover {
+            background: #55acee;
+            color: #fff; }
+          .tophead .child .container .social span .fa-instagram:hover {
+            background: #d6249f;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+            color: #fff; }
+
+/*
+    headertop: small screen phones
+*/
+@media (max-width: 768px) {
+  .tophead {
+    background: url("../images/bg/pricessnaturehairbg2.jpg");
+    height: 70px;
+    background-size: cover;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300; }
+    .tophead .child {
+      padding-top: 10px; }
+      .tophead .child .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; }
+        .tophead .child .container .contact {
+          flex: 2;
+          display: flex;
+          align-content: center;
+          justify-content: space-around;
+          color: #000a00; }
+          .tophead .child .container .contact p {
+            font-weight: 500; }
+          .tophead .child .container .contact .fa {
+            background: #000a00;
+            color: #FFFF66;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 34px;
+            transition: all .3s ease; }
+          .tophead .child .container .contact .fa:hover {
+            transition: all .3s ease;
+            box-shadow: 2px 2px 2px 0px #009933;
+            transform: translateY(-2px); }
+        .tophead .child .container .social {
+          display: none; } }
+/*
+    header top: medium screen
+*/
+/*
+    ##################################
+        headet-top styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        navbar styling begins here
+    ##################################
+*/
+.navbar {
+  height: 70px;
+  overflow: hidden;
+  background: #000a00;
+  z-index: 100;
+  padding: 10px 0px;
+  position: sticky;
+  top: 0px; }
+  .navbar .container {
+    display: flex;
+    justify-content: space-evenly; }
+    .navbar .container .brand {
+      flex: 1; }
+      .navbar .container .brand img {
+        height: 50px; }
+    .navbar .container .navspace {
+      height: 50px;
+      background: #000a00;
+      flex: 3;
+      border-radius: 10px;
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
+      box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.5) 0 12px 15px 0 rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding-top: 25px; }
+    .navbar .container .navicons {
+      flex: 1;
+      margin-left: 50px;
+      display: flex; }
+      .navbar .container .navicons i {
+        flex: 1;
+        margin: 0px 10px;
+        color: #FFFF66;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        transition: all .3s ease;
+        cursor: pointer; }
+      .navbar .container .navicons i:hover {
+        transition: all .3s ease;
+        box-shadow: 2px 2px 2px 0px #009933;
+        transform: translateY(-2px); }
+
+@media (max-width: 343px) {
+  .navbar .container {
+    display: flex;
+    justify-content: space-evenly; }
+    .navbar .container .navicons {
+      flex: 1;
+      display: flex; }
+      .navbar .container .navicons i {
+        flex: 1;
+        margin: 0px 10px;
+        color: #FFFF66;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        transition: all .3s ease;
+        cursor: pointer;
+        display: none; }
+      .navbar .container .navicons i:nth-child(2) {
+        display: block;
+        color: #f0f0e9; } }
+@media (max-width: 414px) {
+  .navbar .container {
+    display: flex;
+    justify-content: space-evenly; }
+    .navbar .container .navicons {
+      flex: 1;
+      display: flex; }
+      .navbar .container .navicons i {
+        flex: 1;
+        margin: 0px 10px;
+        color: #FFFF66;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        transition: all .3s ease;
+        cursor: pointer; }
+      .navbar .container .navicons i:first-child {
+        display: none; }
+      .navbar .container .navicons i:last-child {
+        color: #f0f0e9; } }
+@media (max-width: 345px) {
+  .navbar .container .navicons i:first-child {
+    display: none; } }
+/*
+    ##################################
+        navbar styling ends here
+    ##################################
+*/
+/*
+    ########################################
+        navbar-links styling begins here
+    ########################################
+*/
+.nav-links {
+  width: 30vw;
+  height: 100%;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  background: rgba(162, 247, 162, 0.5);
+  line-height: 50px;
+  position: absolute;
+  top: 140px;
+  left: -1000px;
+  transition: 1.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  .nav-links ul {
+    background: #000a00;
+    padding: 5vh 0vw;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .nav-links ul li {
+      list-style: none;
+      border-bottom: 0.5px solid rgba(243, 243, 243, 0.6); }
+      .nav-links ul li a {
+        color: #FFFF66;
+        font-size: 1.5em;
+        padding: 20px;
+        width: 100%;
+        text-decoration: none;
+        transition: 1.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+      .nav-links ul li a:hover {
+        color: white; }
+    .nav-links ul li:first-child {
+      border-top: 0.5px solid rgba(243, 243, 243, 0.6); }
+
+.navopen {
+  left: 0px !important;
+  box-shadow: 2px 2px 2px 0px #009933;
+  z-index: 50;
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+/*
+    mobile style for navbar-links
+*/
+@media (max-width: 576px) {
+  .nav-links {
+    width: 70vw;
+    height: 100%;
+    padding-left: 5vh;
+    padding-right: 5vh; }
+    .nav-links ul li {
+      list-style: none;
+      border-bottom: 0.5px solid rgba(243, 243, 243, 0.6); }
+      .nav-links ul li a {
+        font-size: 1.2em;
+        padding: 10px; }
+    .nav-links ul li:first-child {
+      border-top: 0.5px solid rgba(243, 243, 243, 0.6); } }
+/*
+    tablet styling
+*/
+@media (min-width: 577px) and (max-width: 768px) {
+  .nav-links {
+    width: 50vw;
+    height: 100%;
+    padding-left: 5vh;
+    padding-right: 5vh; }
+    .nav-links ul li {
+      list-style: none;
+      border-bottom: 0.5px solid rgba(243, 243, 243, 0.6); }
+      .nav-links ul li a {
+        font-size: 1.4em;
+        padding: 25px; }
+    .nav-links ul li:first-child {
+      border-top: 0.5px solid rgba(243, 243, 243, 0.6); } }
+/*
+    ##################################
+        navbar-links styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        hero section styling begins here
+    ##################################
+*/
+.hero {
+  background-color: #000a00;
+  background-image: url("../images/bg/princessnaturehero5.jpg");
+  background-size: cover;
+  background-position: top center;
+  padding-top: 30vh; }
+  .hero .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 5vh;
+    padding-bottom: 5vh; }
+    .hero .overlay .hero-box h2 {
+      color: #FFFF66;
+      font-weight: 900;
+      font-size: 3em;
+      margin-bottom: 0; }
+    .hero .overlay .hero-box p {
+      color: #f0f0e9;
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+      font-weight: 500;
+      line-height: 1.5em; }
+
+/*
+    ##################################
+        hero section styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        welcome section styling starts here
+    ##################################
+*/
+.welcome {
+  padding: 5vh 0vh;
+  background: #f0f0e9;
+  padding: 10vh 0vh;
+  background: white; }
+  .welcome .welcomebox {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-direction: row-reverse; }
+    .welcome .welcomebox .imagecont {
+      flex: 2; }
+      .welcome .welcomebox .imagecont .image-container {
+        overflow: hidden;
+        transition: 3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    .welcome .welcomebox .infocont {
+      flex: 2;
+      padding: 0vh 5vw; }
+      .welcome .welcomebox .infocont p {
+        text-align: justify;
+        line-height: 1.5em;
+        font-size: 1.4em;
+        color: #000a00; }
+
+@media (max-width: 768px) {
+  .welcome {
+    padding: 5vh 0vh;
+    background: #f0f0e9; }
+    .welcome .welcomebox {
+      flex-direction: column; }
+      .welcome .welcomebox .imagecont {
+        flex: 2; }
+        .welcome .welcomebox .imagecont .image-container {
+          padding: 2vh;
+          overflow: hidden;
+          transition: 3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+      .welcome .welcomebox .infocont {
+        flex: 2;
+        padding: 0vh 2vw; }
+        .welcome .welcomebox .infocont p {
+          line-height: 1.5em;
+          font-size: 1.1em;
+          margin-top: 20px;
+          transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .welcome .welcomebox .infocont p:hover {
+          line-height: 1.5em;
+          font-size: 1.1em;
+          background: #000a00;
+          color: #f0f0e9;
+          padding: 5px; } }
+/*
+    ##################################
+        welcome section styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        showoff section styling begins here
+    ##################################
+*/
+.showoff {
+  padding: 10vh 0vh;
+  background: white;
+  padding: 10vh 0vh;
+  background: #f0f0e9; }
+  .showoff h1 {
+    font-weight: 900;
+    color: #009933;
+    margin-bottom: 5vh; }
+  .showoff .showoffbox {
+    display: flex; }
+    .showoff .showoffbox .box {
+      margin: 5px;
+      flex: 1;
+      text-align: center;
+      border: 1px solid #009933;
+      padding: 5vh 0vh;
+      background: #000a00; }
+      .showoff .showoffbox .box hr {
+        background: #FFFF66; }
+      .showoff .showoffbox .box i {
+        color: #009933;
+        margin: 20px 0px;
+        transition: 0.9s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+      .showoff .showoffbox .box h3 {
+        margin: 0px;
+        padding: 0px;
+        margin: 20px 0px;
+        color: #FFFF66; }
+      .showoff .showoffbox .box .notes {
+        padding: 0px 20px; }
+        .showoff .showoffbox .box .notes p {
+          text-align: justify;
+          color: #000a00;
+          margin-bottom: 20px;
+          margin: 20px 0px;
+          color: #000a00;
+          transition: 1.9s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+
+.showoff .showoffbox .box:hover p {
+  color: white !important;
+  display: block; }
+
+.showoff .showoffbox .box:hover i {
+  color: white !important;
+  font-size: 70px; }
+
+.showoff .showoffbox .box:hover {
+  background: black !important;
+  transition: 0.9s cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+
+@media (max-width: 768px) {
+  .showoffbox {
+    flex-direction: column; } }
+/*
+    ##################################
+        showoff section styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        skin section styling starts here
+    ##################################
+*/
+.skin {
+  padding: 5vh 0vh;
+  padding: 10vh 0vh;
+  background: #f0f0e9; }
+  .skin .welcomebox {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center; }
+    .skin .welcomebox .imagecont {
+      flex: 2; }
+      .skin .welcomebox .imagecont .image-container {
+        overflow: hidden;
+        transition: 3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    .skin .welcomebox .infocont {
+      flex: 2;
+      padding: 0vh 5vw; }
+      .skin .welcomebox .infocont p {
+        text-align: justify;
+        line-height: 1.5em;
+        font-size: 1.4em;
+        color: #000a00; }
+
+@media (max-width: 768px) {
+  .skin {
+    padding: 5vh 0vh;
+    background: #f0f0e9; }
+    .skin .welcomebox {
+      flex-direction: column; }
+      .skin .welcomebox .imagecont {
+        flex: 2; }
+        .skin .welcomebox .imagecont .image-container {
+          padding: 2vh;
+          overflow: hidden;
+          transition: 3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+      .skin .welcomebox .infocont {
+        flex: 2;
+        padding: 0vh 2vw; }
+        .skin .welcomebox .infocont p {
+          line-height: 1.5em;
+          font-size: 1.1em;
+          margin-top: 20px;
+          transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .skin .welcomebox .infocont p:hover {
+          line-height: 1.5em;
+          font-size: 1.1em;
+          background: #000a00;
+          color: #f0f0e9;
+          padding: 5px; } }
+/*
+    ##################################
+        skin section styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        ctashop section styling begins here
+    ##################################
+*/
+.ctashop {
+  min-height: 50vh;
+  background: #f0f0e9;
+  background: url("../images/bg/princessnatureshow.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-blend-mode: lighten;
+  padding: 10vh 0vh; }
+  .ctashop .overlay {
+    min-height: 50vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9); }
+    .ctashop .overlay .content {
+      min-height: 50vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .ctashop .overlay .content h2 {
+        color: #FFFF66;
+        font-size: 3.5em;
+        font-weight: 900;
+        max-width: 80%; }
+
+@media (max-width: 768px) {
+  .ctashop .overlay .content h2 {
+    color: #FFFF66;
+    font-size: 2.5em;
+    font-weight: 900;
+    max-width: 80%; } }
+/*
+    ##################################
+        ctashop section styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        bestsellers section styling begins here
+    ##################################
+*/
+.bestselling, .shoproom {
+  padding: 10vh 0vh;
+  background: white;
+  min-height: 50vh; }
+  .bestselling .products-card, .shoproom .products-card {
+    display: flex; }
+    .bestselling .products-card .productcard, .shoproom .products-card .productcard {
+      box-shadow: 5px 5px 5px 0px lightgray;
+      margin: 10px; }
+      .bestselling .products-card .productcard .imagearea, .shoproom .products-card .productcard .imagearea {
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+        position: relative; }
+        .bestselling .products-card .productcard .imagearea .quickview, .shoproom .products-card .productcard .imagearea .quickview {
+          position: absolute;
+          bottom: 50%;
+          left: 20px;
+          display: none;
+          transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .bestselling .products-card .productcard .imagearea:hover .quickview, .shoproom .products-card .productcard .imagearea:hover .quickview {
+          display: block;
+          transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+      .bestselling .products-card .productcard .textarea, .shoproom .products-card .productcard .textarea {
+        text-align: center; }
+        .bestselling .products-card .productcard .textarea h4, .shoproom .products-card .productcard .textarea h4 {
+          font-weight: 600px;
+          margin-top: 20px;
+          text-transform: uppercase; }
+        .bestselling .products-card .productcard .textarea p, .shoproom .products-card .productcard .textarea p {
+          margin: 0px;
+          padding: 0px;
+          color: #000a00; }
+
+@media (max-width: 540px) {
+  .bestselling, .shoproom {
+    padding: 10vh 0vh;
+    background: white;
+    min-height: 50vh; }
+    .bestselling .products-card .productcard .imagearea .quickview, .shoproom .products-card .productcard .imagearea .quickview {
+      position: absolute;
+      bottom: 50%;
+      left: 20px;
+      display: none;
+      transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .bestselling .products-card .productcard .imagearea:hover .quickview, .shoproom .products-card .productcard .imagearea:hover .quickview {
+      display: block;
+      transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .bestselling .products-card .productcard .textarea, .shoproom .products-card .productcard .textarea {
+      text-align: center; }
+      .bestselling .products-card .productcard .textarea h4, .shoproom .products-card .productcard .textarea h4 {
+        font-weight: 300px;
+        margin-top: 20px;
+        text-transform: capitalize;
+        font-size: 0.9em; }
+      .bestselling .products-card .productcard .textarea p, .shoproom .products-card .productcard .textarea p {
+        margin: 0px;
+        padding: 0px;
+        font-size: 0.9em;
+        color: #000a00; } }
+/*
+    ##################################
+        bestsellers section styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        blog section styling starts here
+    ##################################
+*/
+.blog {
+  padding: 10vh 0vh;
+  background: #f0f0e9;
+  min-height: 50vh; }
+  .blog .blogs-box {
+    display: flex; }
+    .blog .blogs-box .blogbox {
+      padding: 10px;
+      box-shadow: 5px 5px 5px 0px black;
+      margin: 10px;
+      background: white; }
+      .blog .blogs-box .blogbox .headpart {
+        position: relative; }
+        .blog .blogs-box .blogbox .headpart .date {
+          box-shadow: 2px 2px 2px 0px black;
+          position: absolute;
+          top: 40px;
+          left: 0px;
+          width: 50px;
+          height: 50px;
+          overflow: hidden;
+          background: white;
+          color: #000a00; }
+          .blog .blogs-box .blogbox .headpart .date p {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            font-weight: 600; }
+        .blog .blogs-box .blogbox .headpart .category {
+          box-shadow: 2px 2px 2px 0px black;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          width: 50px;
+          height: 50px;
+          overflow: hidden;
+          background: #000a00;
+          color: #000a00;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .blog .blogs-box .blogbox .headpart .category p {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            font-weight: 600;
+            color: #FFFF66;
+            text-transform: lowercase; }
+
+@media (max-width: 540px) {
+  h3 {
+    font-size: 0.9em; }
+
+  p {
+    font-size: 0.9em; } }
+/*
+    ##################################
+        blog section styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        subscribe section styling ends here
+    ##################################
+*/
+.subscribe {
+  padding: 10vh 0vh;
+  background: white; }
+  .subscribe .container {
+    background: url("../images/bg/princessnature1.jpeg");
+    padding: 5vh 0vh; }
+    .subscribe .container .h2 {
+      padding: 0px;
+      margin: 0px;
+      color: #f1f1eb; }
+    .subscribe .container p {
+      color: #FFFF66; }
+    .subscribe .container .subscription-form {
+      padding: 0px 20px; }
+
+@media (max-width: 576px) {
+  .subscribe {
+    padding: 10vh 0vh;
+    background: white;
+    padding: 0px; }
+    .subscribe .container {
+      background: url("../images/bg/princessnature1.jpeg");
+      padding: 5vh 20px; }
+      .subscribe .container .subscription-form input {
+        margin: 10px 0px; } }
+/*
+    ##################################
+        subscribe section styling ends here
+    ##################################
+*/
+/*
+    ##################################
+        footer section styling begins  here
+    ##################################
+*/
+footer .falsefooter {
+  padding: 10vh 0vh;
+  background: black;
+  background: url("../images/bg/princessnaturehero5.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative; }
+  footer .falsefooter::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 10, 0, 0.9);
+    z-index: 100; }
+  footer .falsefooter .fholder {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 20px; }
+    footer .falsefooter .fholder h6 {
+      color: white; }
+    footer .falsefooter .fholder p, footer .falsefooter .fholder a {
+      color: #FFFF66;
+      font-weight: 300;
+      line-height: 2.5em;
+      font-size: 0.9em; }
+    footer .falsefooter .fholder .fa {
+      color: white;
+      margin-right: 10px;
+      clear: both; }
+    footer .falsefooter .fholder .about {
+      flex: 1;
+      padding-right: 20px;
+      z-index: 20000; }
+    footer .falsefooter .fholder .contact {
+      flex: 1;
+      padding-right: 40px;
+      z-index: 20000;
+      text-align: left; }
+    footer .falsefooter .fholder .product {
+      flex: 1;
+      padding-right: 20px;
+      z-index: 20000;
+      text-align: right; }
+    footer .falsefooter .fholder .links {
+      flex: 1;
+      z-index: 20000;
+      text-align: right; }
+footer .footer {
+  padding: 4vh 0vh;
+  background: #000a00; }
+  footer .footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    footer .footer .container .developer {
+      color: white;
+      font-size: 0.8em;
+      font-weight: 200; }
+    footer .footer .container .copyright {
+      color: white;
+      font-size: 0.8em;
+      font-weight: 200; }
+
+/* media query for mobile  */
+@media (max-width: 560px) {
+  footer .falsefooter .fholder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px; }
+    footer .falsefooter .fholder .footerbox {
+      margin-bottom: 20px;
+      text-align: left !important; }
+    footer .falsefooter .fholder h6 {
+      color: white; }
+    footer .falsefooter .fholder p,
+    footer .falsefooter .fholder a {
+      color: #FFFF66;
+      font-weight: 300;
+      line-height: 1.5em;
+      font-size: 0.9em; }
+    footer .falsefooter .fholder span {
+      color: white;
+      margin-right: 10px;
+      clear: both; }
+    footer .falsefooter .fholder .about {
+      flex: 1;
+      padding-right: 20px;
+      z-index: 20000; }
+    footer .falsefooter .fholder .contact {
+      flex: 1;
+      padding-right: 40px;
+      z-index: 20000;
+      text-align: left; }
+    footer .falsefooter .fholder .product {
+      flex: 1;
+      padding-right: 20px;
+      z-index: 20000;
+      text-align: right; }
+    footer .falsefooter .fholder .links {
+      flex: 1;
+      z-index: 20000;
+      text-align: right;
+      margin-bottom: 0px; }
+  footer .footer {
+    min-height: 1vh;
+    background: #000a00;
+    padding-top: 5vh; }
+    footer .footer .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+      footer .footer .container .developer {
+        color: white;
+        font-size: 0.8em;
+        font-weight: 200;
+        margin-bottom: 10px; }
+      footer .footer .container .copyright {
+        color: white;
+        font-size: 0.8em;
+        font-weight: 200; } }
+.backtotop {
+  position: fixed;
+  bottom: 15vh;
+  right: 5px;
+  z-index: 20000000;
+  display: none; }
+  .backtotop .fa {
+    color: white; }
+
+/*
+    ##################################
+        footer section styling ends here
+    ##################################
+*/
+/*
+     ##################################
+    ##################################
+       user page styling starts here
+    ##################################
+     ##################################
+*/
+/*
+    ##################################
+       pagehero section styling starts here
+    ##################################
+*/
+.pagehero {
+  background: url("../images/bg/princessnaturehero6.jpg");
+  height: 40vh;
+  position: relative;
+  background-position: center center; }
+  .pagehero::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 40vh;
+    width: 100%;
+    background: rgba(0, 10, 0, 0.8); }
+  .pagehero h1 {
+    text-transform: capitalize;
+    color: white;
+    z-index: 10; }
+  .pagehero p {
+    margin-top: 2px;
+    z-index: 10;
+    color: #FFFF66;
+    padding: 0px 20px; }
+
+.userform {
+  padding: 10vh 0vh;
+  background: white;
+  min-height: 100vh; }
+
+.loginform, .registerform {
+  background: #000a00;
+  color: white;
+  padding: 10px; }
+  .loginform .md-form, .registerform .md-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px; }
+    .loginform .md-form i, .registerform .md-form i {
+      flex: 1;
+      margin-left: 20px; }
+      .loginform .md-form i .fa, .registerform .md-form i .fa {
+        color: #FFFF66; }
+    .loginform .md-form input, .registerform .md-form input {
+      flex: 3;
+      margin-right: 20px;
+      border: none;
+      border-bottom: 1px dotted #FFFF66;
+      background: transparent;
+      transition: 1s ease-in;
+      -webkit-transition: 1s ease-in;
+      -moz-transition: 1s ease-in;
+      -ms-transition: 1s ease-in;
+      -o-transition: 1s ease-in; }
+      .loginform .md-form input::placeholder, .registerform .md-form input::placeholder {
+        color: white;
+        font-weight: 600; }
+      .loginform .md-form input:focus, .registerform .md-form input:focus {
+        outline: none;
+        border: none;
+        background: white;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 100, 100, 0.6); }
+
+/*
+     ##################################
+    ##################################
+       shop page styling starts here
+    ##################################
+     ##################################
+*/
+/*
+    ##################################
+       pagehero section styling starts here
+    ##################################
+*/
+.shophero {
+  background: url("../images/bg/princessnaturehero6.jpg");
+  height: 40vh;
+  position: relative;
+  background-position: center center; }
+  .shophero::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 40vh;
+    width: 100%;
+    background: rgba(0, 10, 0, 0.4); }
+  .shophero h1 {
+    text-transform: capitalize;
+    color: white;
+    z-index: 10; }
+  .shophero p {
+    margin-top: 2px;
+    z-index: 10;
+    color: #FFFF66;
+    padding: 0px 20px; }
+
+.shoproom {
+  padding: 10vh 0vh;
+  background: white;
+  min-height: 100vh; }
+
+/*
+     ##################################
+    ##################################
+       singleproduct page styling starts here
+    ##################################
+     ##################################
+*/
+/*
+    ##################################
+       pagehero section styling starts here
+    ##################################
+*/
+.productdetailhero {
+  background: url("../images/bg/princessnaturehero6.jpg");
+  height: 10vh;
+  position: relative;
+  background-position: center center; }
+  .productdetailhero::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 10vh;
+    width: 100%;
+    background: rgba(0, 10, 0, 0.4); }
+  .productdetailhero h1 {
+    text-transform: capitalize;
+    color: white;
+    z-index: 10; }
+  .productdetailhero p {
+    margin-top: 2px;
+    z-index: 10;
+    color: #FFFF66;
+    padding: 0px 20px; }
+
+.productdetailbox .productdetail {
+  display: flex;
+  padding: 20px 0px;
+  justify-content: space-around;
+  align-items: center; }
+  .productdetailbox .productdetail .productimg {
+    flex: 1;
+    padding: 20px; }
+  .productdetailbox .productdetail .producttext {
+    flex: 1;
+    padding: 20px; }
+
+@media (max-width: 768px) {
+  .productdetailbox .productdetail {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+    justify-content: space-around;
+    align-items: center; }
+    .productdetailbox .productdetail .productimg {
+      flex: 1;
+      padding: 10px 0px; }
+    .productdetailbox .productdetail .producttext {
+      flex: 1;
+      padding: 10px 0px; }
+      .productdetailbox .productdetail .producttext h3 {
+        font-size: 1.6em;
+        text-align: center; }
+      .productdetailbox .productdetail .producttext h5 {
+        text-align: center; }
+      .productdetailbox .productdetail .producttext .price {
+        font-size: 1.2em;
+        background: #c2f3d3;
+        padding: 10px;
+        margin: 20px;
+        color: #000a00;
+        font-weight: 600; } }
+/*
+    ##################################
+       cart styling starts here
+    ##################################
+*/
+.cart-content {
+  background: #c2f3d3;
+  padding: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column; }
+  .cart-content .cart-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    background: #000a00;
+    padding: 10px 2px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 10, 0, 0.5); }
+    .cart-content .cart-box .cartitem {
+      max-width: 30%;
+      margin: 10px; }
+
+/*
+     ##################################
+    ##################################
+       memberarea page styling starts here
+    ##################################
+     ##################################
+*/
+/*
+    ##################################
+       pagehero section styling starts here
+    ##################################
+*/
+.memberarea {
+  padding: 10vh 0vh;
+  background: white;
+  border-bottom: 100px solid #000a00; }
+  .memberarea .holder {
+    position: relative; }
+    .memberarea .holder ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .memberarea .holder ul li {
+        min-width: 40%;
+        list-style-type: none;
+        text-align: center;
+        margin: 20px 5%;
+        background: black;
+        padding: 20px 0px;
+        cursor: pointer;
+        transition: all .25s;
+        -webkit-transition: all .25s;
+        -moz-transition: all .25s;
+        -ms-transition: all .25s;
+        -o-transition: all .25s; }
+        .memberarea .holder ul li:hover {
+          box-shadow: 5px 0 5px 2px rgba(20, 200, 0, 0.25);
+          border-radius: 20px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          -o-border-radius: 20px; }
+        .memberarea .holder ul li h5 {
+          color: #FFFF66; }
+        .memberarea .holder ul li p {
+          color: #c2f3d3; }
+    .memberarea .holder .content-area {
+      width: 100%;
+      height: 100%;
+      background: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: white;
+      display: none;
+      padding: 0px 20px; }
+      .memberarea .holder .content-area .close-btn {
+        position: absolute;
+        top: 0;
+        right: 0; }
+    .memberarea .holder .open-content-area {
+      display: block; }
+    .memberarea .holder .close-content-area {
+      display: none; }
+
+@media (max-width: 576px) {
+  .memberarea {
+    padding: 10vh 0vh;
+    background: white;
+    border-bottom: 100px solid #000a00; }
+    .memberarea .holder {
+      position: relative; }
+      .memberarea .holder ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .memberarea .holder ul li {
+          min-width: 90%;
+          list-style-type: none;
+          text-align: center;
+          margin: 20px 5%;
+          background: black;
+          padding: 20px 0px;
+          cursor: pointer;
+          transition: all .25s;
+          -webkit-transition: all .25s;
+          -moz-transition: all .25s;
+          -ms-transition: all .25s;
+          -o-transition: all .25s; }
+          .memberarea .holder ul li:hover {
+            box-shadow: 5px 0 5px 2px rgba(20, 200, 0, 0.25);
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px; }
+          .memberarea .holder ul li h5 {
+            color: #FFFF66; }
+          .memberarea .holder ul li p {
+            color: #c2f3d3; }
+      .memberarea .holder .content-area {
+        width: 100%;
+        height: 100%;
+        background: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        display: none;
+        padding: 0px 20px; }
+        .memberarea .holder .content-area .close-btn {
+          position: absolute;
+          top: 0;
+          right: 0; }
+      .memberarea .holder .open-content-area {
+        display: block; }
+      .memberarea .holder .close-content-area {
+        display: none; } }
+/*
+    ##################################
+       pagehero section styling starts here
+    ##################################
+*/
+
+/*# sourceMappingURL=mainstyle.css.map */

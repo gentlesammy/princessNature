@@ -1,0 +1,33 @@
+/*
+    ##################################
+       cart styling starts here
+    ##################################
+*/
+
+.cart-content{
+    background:$whitegreen;
+    padding:5px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+
+    .cart-box{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin:20px 0px;
+        background:$darkgreen;
+        padding: 10px 2px;
+        box-shadow: 5px 5px 5px 0px rgba($darkgreen, 0.5);
+        .cartitem{
+            max-width:30%;
+            margin:10px;
+        }
+    }
+
+
+
+
+
+}

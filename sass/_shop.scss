@@ -1,0 +1,25 @@
+/*
+     ##################################
+    ##################################
+       shop page styling starts here
+    ##################################
+     ##################################
+*/
+
+
+/*
+    ##################################
+       pagehero section styling starts here
+    ##################################
+*/
+
+.shophero {
+    @include pagehero($bgimage:url('../images/bg/princessnaturehero6.jpg'), $bgcolor:rgba($darkgreen, .4), $height:40vh);
+
+}
+
+.shoproom{
+    @extend .bestselling;
+    @include section($bg:white);
+    min-height:100vh;
+}

@@ -1,0 +1,79 @@
+/*
+     ##################################
+    ##################################
+       singleproduct page styling starts here
+    ##################################
+     ##################################
+*/
+
+
+/*
+    ##################################
+       pagehero section styling starts here
+    ##################################
+*/
+
+.productdetailhero {
+    @include pagehero($bgimage:url('../images/bg/princessnaturehero6.jpg'), $bgcolor:rgba($darkgreen, .4), $height:10vh);
+
+}
+
+.productdetailbox{
+
+    .productdetail {
+        display: flex;
+        padding: 20px 0px;
+        justify-content: space-around;
+        align-items: center;
+
+        .productimg {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .producttext {
+            flex: 1;
+            padding: 20px;
+        }
+    }  
+}
+
+@media (max-width:768px){
+    .productdetailbox {
+
+        .productdetail {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 5px;
+            justify-content: space-around;
+            align-items: center;
+
+            .productimg {
+                flex: 1;
+                padding: 10px 0px;
+            }
+
+            .producttext {
+                flex: 1;
+                padding: 10px 0px;
+                h3{
+                    font-size:1.6em;
+                    text-align:center;
+                }
+                h5{
+                    text-align:center;
+                }
+
+                .price{
+                    font-size:1.2em;
+                    background:$whitegreen;
+                    padding:10px;
+                    margin: 20px;
+                    color:$darkgreen;
+                    font-weight:600;
+                }
+
+            }
+        }
+    }
+}
